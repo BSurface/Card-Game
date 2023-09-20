@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Balin's BlackJack Game</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "game">
+        <h2>Balin's BlackJack Assignment</h2>
+        <div class = "game-body">
+            <div class = "game-options">
+                <input type = "button" id="btnStart" class = "btn" value = "START" onclick="startGame()">
+                <input type = "button" class = "btn" value = "HIT" onclick="hitMe()">
+                <input type = "button" class = "btn" value = "STAY" onclick="stay()">
+                
+            </div>
+            <div class = "status" id = "status"></div>
+            <div id="deck" class="deck">
+                <div id="deckcount">52</div>
+            </div>
+
+            <div id="players" class="players">
+
+            </div>
+            <div class = "clear"></div>
+            
+            
+
+        </div>
+    </div>
+    <div class = betting>
+        <h3>Money Remaining: </h3>
+    </div>
+    <div>
+        <h1 id = "name">Name</h1>
+        <h2 id = "suit">Suit</h2>
+        <h3 id = "cardval">Value</h3>
+        <img src = "Cards/Spades/13.png" id = "card1">
+        <button onclick="card(2)">Change</button>
+    </div>
+    <div>
+        <button onclick="createPlayers(2)">Create Players</button>
+        <button oncllick="startGame()">Start</button>
+        <button onclick="dealHands()">Deal</button>
+        <button onclick="createUI()">UI</button>
+    </div>
+    <script src="PRACTICE.js"></script>
+</body>
